@@ -7,11 +7,13 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <OutputPath>C:\Users\Administrator\Desktop\GrandRP Remake\dotnet\resources\ProjectV\</OutputPath>
+    <OutputPath>C:\Users\Anonymous\Desktop\GrandGanglifeBackend-main\GrandRemake\dotnet\resources\ProjectV\</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Module\" />
+    <Compile Remove="Module\**" />
+    <EmbeddedResource Remove="Module\**" />
+    <None Remove="Module\**" />
   </ItemGroup>
 
 	<ItemGroup>
@@ -28,8 +30,12 @@
 
   <ItemGroup>
     <Reference Include="Bootstrapper">
-      <HintPath>..\..\..\..\Desktop\GrandRP Remake\dotnet\resources\ProjectV\netcoreapp3.1\Bootstrapper.dll</HintPath>
+      <HintPath>..\..\..\..\Desktop\GrandGanglifeBackend-main\GrandRemake\dotnet\resources\ProjectV\netcoreapp3.1\Bootstrapper.dll</HintPath>
     </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Handlers\" />
   </ItemGroup>
 
 </Project>
